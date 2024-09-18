@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<MethodSetup Method="PDEFoam::PDEFoam">
+  <GeneralInfo>
+    <Info name="TMVA Release" value="4.2.1 [262657]"/>
+    <Info name="ROOT Release" value="6.33/01 [401665]"/>
+    <Info name="Creator" value="nsonmez"/>
+    <Info name="Date" value="Tue Sep 17 20:30:47 2024"/>
+    <Info name="Host" value="Darwin MacAir-1879.local 23.6.0 Darwin Kernel Version 23.6.0: Mon Jul 29 21:16:46 PDT 2024; root:xnu-10063.141.2~1/RELEASE_ARM64_T8112 arm64"/>
+    <Info name="Dir" value="/Users/nsonmez/root_install/tutorials/tmva"/>
+    <Info name="Training events" value="2000"/>
+    <Info name="TrainingTime" value="1.51606798e-01"/>
+    <Info name="AnalysisType" value="Classification"/>
+  </GeneralInfo>
+  <Options>
+    <Option name="V" modified="Yes">False</Option>
+    <Option name="VerbosityLevel" modified="No">Default</Option>
+    <Option name="VarTransform" modified="No">None</Option>
+    <Option name="H" modified="Yes">False</Option>
+    <Option name="CreateMVAPdfs" modified="No">False</Option>
+    <Option name="IgnoreNegWeightsInTraining" modified="No">False</Option>
+    <Option name="SigBgSeparate" modified="Yes">False</Option>
+    <Option name="TailCut" modified="Yes">1.000000e-03</Option>
+    <Option name="VolFrac" modified="Yes">6.660000e-02</Option>
+    <Option name="nActiveCells" modified="Yes">500</Option>
+    <Option name="nSampl" modified="Yes">2000</Option>
+    <Option name="nBin" modified="Yes">5</Option>
+    <Option name="Compress" modified="Yes">True</Option>
+    <Option name="MultiTargetRegression" modified="No">False</Option>
+    <Option name="Nmin" modified="Yes">100</Option>
+    <Option name="MaxDepth" modified="No">0</Option>
+    <Option name="FillFoamWithOrigWeights" modified="No">False</Option>
+    <Option name="UseYesNoCell" modified="No">False</Option>
+    <Option name="DTLogic" modified="No">None</Option>
+    <Option name="Kernel" modified="Yes">None</Option>
+    <Option name="TargetSelection" modified="No">Mean</Option>
+  </Options>
+  <Variables NVar="4">
+    <Variable VarIndex="0" Expression="var1+var2" Label="myvar1" Title="myvar1" Unit="" Internal="myvar1" Type="F" Min="-9.31873512e+00" Max="7.53042316e+00"/>
+    <Variable VarIndex="1" Expression="var1-var2" Label="myvar2" Title="Expression 2" Unit="" Internal="myvar2" Type="F" Min="-3.70671988e+00" Max="4.02912045e+00"/>
+    <Variable VarIndex="2" Expression="var3" Label="var3" Title="Variable 3" Unit="units" Internal="var3" Type="F" Min="-5.05078554e+00" Max="4.33005810e+00"/>
+    <Variable VarIndex="3" Expression="var4" Label="var4" Title="Variable 4" Unit="units" Internal="var4" Type="F" Min="-5.82962179e+00" Max="5.03067923e+00"/>
+  </Variables>
+  <Spectators NSpec="2">
+    <Spectator SpecIndex="0" Expression="var1*2" Label="spec1" Title="Spectator 1" Unit="units" Internal="spec1" Type="F" Min="-9.14904976e+00" Max="9.52782059e+00"/>
+    <Spectator SpecIndex="1" Expression="var1*3" Label="spec2" Title="Spectator 2" Unit="units" Internal="spec2" Type="F" Min="-1.37235746e+01" Max="1.42917309e+01"/>
+  </Spectators>
+  <Classes NClass="2">
+    <Class Name="Signal" Index="0"/>
+    <Class Name="Background" Index="1"/>
+  </Classes>
+  <Transformations NTransformations="0"/>
+  <MVAPdfs/>
+  <Weights SigBgSeparated="0" Frac="1.0000000474974513e-03" DiscrErrCut="-1.0000000000000000e+00" VolFrac="6.6600002348423004e-02" nCells="999" nSampl="2000" nBin="5" EvPerBin="10000" Compress="1" DoRegression="0" CutNmin="1" Nmin="100" CutRMSmin="0" RMSmin="0.0000000000000000e+00" Kernel="0" TargetSelection="0" FillFoamWithOrigWeights="0" UseYesNoCell="0">
+    <Xmin Index="0" Value="-8.0045003890991211e+00"/>
+    <Xmin Index="1" Value="-3.4908900260925293e+00"/>
+    <Xmin Index="2" Value="-4.8763017654418945e+00"/>
+    <Xmin Index="3" Value="-5.4223604202270508e+00"/>
+    <Xmax Index="0" Value="7.2237687110900879e+00"/>
+    <Xmax Index="1" Value="3.2934420108795166e+00"/>
+    <Xmax Index="2" Value="4.0777134895324707e+00"/>
+    <Xmax Index="3" Value="4.5017824172973633e+00"/>
+  </Weights>
+</MethodSetup>

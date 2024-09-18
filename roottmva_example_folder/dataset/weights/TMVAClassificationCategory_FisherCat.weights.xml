@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<MethodSetup Method="Category::FisherCat">
+  <GeneralInfo>
+    <Info name="TMVA Release" value="4.2.1 [262657]"/>
+    <Info name="ROOT Release" value="6.33/01 [401665]"/>
+    <Info name="Creator" value="nsonmez"/>
+    <Info name="Date" value="Tue Sep 17 20:35:50 2024"/>
+    <Info name="Host" value="Darwin MacAir-1879.local 23.6.0 Darwin Kernel Version 23.6.0: Mon Jul 29 21:16:46 PDT 2024; root:xnu-10063.141.2~1/RELEASE_ARM64_T8112 arm64"/>
+    <Info name="Dir" value="/Users/nsonmez/root_install/tutorials/tmva"/>
+    <Info name="Training events" value="10000"/>
+    <Info name="TrainingTime" value="1.37948990e-02"/>
+    <Info name="AnalysisType" value="Classification"/>
+  </GeneralInfo>
+  <Options>
+    <Option name="V" modified="No">False</Option>
+    <Option name="VerbosityLevel" modified="No">Default</Option>
+    <Option name="VarTransform" modified="No">None</Option>
+    <Option name="H" modified="No">False</Option>
+    <Option name="CreateMVAPdfs" modified="No">False</Option>
+    <Option name="IgnoreNegWeightsInTraining" modified="No">False</Option>
+  </Options>
+  <Variables NVar="4">
+    <Variable VarIndex="0" Expression="var1" Label="var1" Title="var1" Unit="" Internal="var1" Type="F" Min="-5.31190872e+00" Max="4.21716070e+00"/>
+    <Variable VarIndex="1" Expression="var2" Label="var2" Title="var2" Unit="" Internal="var2" Type="F" Min="-4.75368166e+00" Max="4.41805696e+00"/>
+    <Variable VarIndex="2" Expression="var3" Label="var3" Title="var3" Unit="" Internal="var3" Type="F" Min="-4.52968788e+00" Max="4.66851807e+00"/>
+    <Variable VarIndex="3" Expression="var4" Label="var4" Title="var4" Unit="" Internal="var4" Type="F" Min="-4.66884232e+00" Max="5.14146757e+00"/>
+  </Variables>
+  <Spectators NSpec="1">
+    <Spectator SpecIndex="0" Expression="eta" Label="eta" Title="eta" Unit="" Internal="eta" Type="F" Min="-2.49952102e+00" Max="2.49999905e+00"/>
+  </Spectators>
+  <Classes NClass="2">
+    <Class Name="Signal" Index="0"/>
+    <Class Name="Background" Index="1"/>
+  </Classes>
+  <Transformations NTransformations="0"/>
+  <MVAPdfs/>
+  <Weights NSubMethods="2">
+    <SubMethod Index="0" Method="Fisher::Category_Fisher_1" Cut="abs(eta)&lt;=1.3" Variables="var1:var2:var3:var4">
+      <GeneralInfo>
+        <Info name="TMVA Release" value="4.2.1 [262657]"/>
+        <Info name="ROOT Release" value="6.33/01 [401665]"/>
+        <Info name="Creator" value="nsonmez"/>
+        <Info name="Date" value="Tue Sep 17 20:35:50 2024"/>
+        <Info name="Host" value="Darwin MacAir-1879.local 23.6.0 Darwin Kernel Version 23.6.0: Mon Jul 29 21:16:46 PDT 2024; root:xnu-10063.141.2~1/RELEASE_ARM64_T8112 arm64"/>
+        <Info name="Dir" value="/Users/nsonmez/root_install/tutorials/tmva"/>
+        <Info name="Training events" value="5128"/>
+        <Info name="TrainingTime" value="5.45978546e-04"/>
+        <Info name="AnalysisType" value="Classification"/>
+      </GeneralInfo>
+      <Options>
+        <Option name="V" modified="Yes">False</Option>
+        <Option name="VerbosityLevel" modified="No">Default</Option>
+        <Option name="VarTransform" modified="No">None</Option>
+        <Option name="H" modified="Yes">False</Option>
+        <Option name="CreateMVAPdfs" modified="No">False</Option>
+        <Option name="IgnoreNegWeightsInTraining" modified="No">False</Option>
+        <Option name="Method" modified="Yes">Fisher</Option>
+      </Options>
+      <Variables NVar="4">
+        <Variable VarIndex="0" Expression="var1" Label="var1" Title="var1" Unit="" Internal="var1" Type="F" Min="-4.58091497e+00" Max="2.73605919e+00"/>
+        <Variable VarIndex="1" Expression="var2" Label="var2" Title="var2" Unit="" Internal="var2" Type="F" Min="-4.75368166e+00" Max="3.00996470e+00"/>
+        <Variable VarIndex="2" Expression="var3" Label="var3" Title="var3" Unit="" Internal="var3" Type="F" Min="-5.28915071e+00" Max="3.57000399e+00"/>
+        <Variable VarIndex="3" Expression="var4" Label="var4" Title="var4" Unit="" Internal="var4" Type="F" Min="-5.10020828e+00" Max="3.16070724e+00"/>
+      </Variables>
+      <Classes NClass="2">
+        <Class Name="Signal" Index="0"/>
+        <Class Name="Background" Index="1"/>
+      </Classes>
+      <Transformations NTransformations="0"/>
+      <MVAPdfs/>
+      <Weights NCoeff="5">
+        <Coefficient Index="0" Value="6.2255453899632729e-01"/>
+        <Coefficient Index="1" Value="9.4018944479444533e-02"/>
+        <Coefficient Index="2" Value="1.3730207095344074e-01"/>
+        <Coefficient Index="3" Value="2.5370076227067623e-01"/>
+        <Coefficient Index="4" Value="3.7061440607383106e-01"/>
+      </Weights>
+    </SubMethod>
+    <SubMethod Index="1" Method="Fisher::Category_Fisher_2" Cut="abs(eta)&gt;1.3" Variables="var1:var2:var3:var4">
+      <GeneralInfo>
+        <Info name="TMVA Release" value="4.2.1 [262657]"/>
+        <Info name="ROOT Release" value="6.33/01 [401665]"/>
+        <Info name="Creator" value="nsonmez"/>
+        <Info name="Date" value="Tue Sep 17 20:35:50 2024"/>
+        <Info name="Host" value="Darwin MacAir-1879.local 23.6.0 Darwin Kernel Version 23.6.0: Mon Jul 29 21:16:46 PDT 2024; root:xnu-10063.141.2~1/RELEASE_ARM64_T8112 arm64"/>
+        <Info name="Dir" value="/Users/nsonmez/root_install/tutorials/tmva"/>
+        <Info name="Training events" value="4871"/>
+        <Info name="TrainingTime" value="5.22136688e-04"/>
+        <Info name="AnalysisType" value="Classification"/>
+      </GeneralInfo>
+      <Options>
+        <Option name="V" modified="Yes">False</Option>
+        <Option name="VerbosityLevel" modified="No">Default</Option>
+        <Option name="VarTransform" modified="No">None</Option>
+        <Option name="H" modified="Yes">False</Option>
+        <Option name="CreateMVAPdfs" modified="No">False</Option>
+        <Option name="IgnoreNegWeightsInTraining" modified="No">False</Option>
+        <Option name="Method" modified="Yes">Fisher</Option>
+      </Options>
+      <Variables NVar="4">
+        <Variable VarIndex="0" Expression="var1" Label="var1" Title="var1" Unit="" Internal="var1" Type="F" Min="-2.50369263e+00" Max="4.56086302e+00"/>
+        <Variable VarIndex="1" Expression="var2" Label="var2" Title="var2" Unit="" Internal="var2" Type="F" Min="-3.07094312e+00" Max="4.67226028e+00"/>
+        <Variable VarIndex="2" Expression="var3" Label="var3" Title="var3" Unit="" Internal="var3" Type="F" Min="-2.91323900e+00" Max="4.82019377e+00"/>
+        <Variable VarIndex="3" Expression="var4" Label="var4" Title="var4" Unit="" Internal="var4" Type="F" Min="-2.84130931e+00" Max="5.14146757e+00"/>
+      </Variables>
+      <Classes NClass="2">
+        <Class Name="Signal" Index="0"/>
+        <Class Name="Background" Index="1"/>
+      </Classes>
+      <Transformations NTransformations="0"/>
+      <MVAPdfs/>
+      <Weights NCoeff="5">
+        <Coefficient Index="0" Value="-7.3826902596150701e-01"/>
+        <Coefficient Index="1" Value="1.1103656736845187e-01"/>
+        <Coefficient Index="2" Value="1.4112417512564909e-01"/>
+        <Coefficient Index="3" Value="2.5665769760760920e-01"/>
+        <Coefficient Index="4" Value="3.6160506261895148e-01"/>
+      </Weights>
+    </SubMethod>
+  </Weights>
+</MethodSetup>

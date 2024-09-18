@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<MethodSetup Method="Fisher::Fisher">
+  <GeneralInfo>
+    <Info name="TMVA Release" value="4.2.1 [262657]"/>
+    <Info name="ROOT Release" value="6.33/01 [401665]"/>
+    <Info name="Creator" value="nsonmez"/>
+    <Info name="Date" value="Tue Sep 17 20:35:50 2024"/>
+    <Info name="Host" value="Darwin MacAir-1879.local 23.6.0 Darwin Kernel Version 23.6.0: Mon Jul 29 21:16:46 PDT 2024; root:xnu-10063.141.2~1/RELEASE_ARM64_T8112 arm64"/>
+    <Info name="Dir" value="/Users/nsonmez/root_install/tutorials/tmva"/>
+    <Info name="Training events" value="10000"/>
+    <Info name="TrainingTime" value="1.05404854e-03"/>
+    <Info name="AnalysisType" value="Classification"/>
+  </GeneralInfo>
+  <Options>
+    <Option name="V" modified="Yes">False</Option>
+    <Option name="VerbosityLevel" modified="No">Default</Option>
+    <Option name="VarTransform" modified="No">None</Option>
+    <Option name="H" modified="Yes">False</Option>
+    <Option name="CreateMVAPdfs" modified="No">False</Option>
+    <Option name="IgnoreNegWeightsInTraining" modified="No">False</Option>
+    <Option name="Method" modified="Yes">Fisher</Option>
+  </Options>
+  <Variables NVar="4">
+    <Variable VarIndex="0" Expression="var1" Label="var1" Title="var1" Unit="" Internal="var1" Type="F" Min="-5.31190872e+00" Max="4.21716070e+00"/>
+    <Variable VarIndex="1" Expression="var2" Label="var2" Title="var2" Unit="" Internal="var2" Type="F" Min="-4.75368166e+00" Max="4.41805696e+00"/>
+    <Variable VarIndex="2" Expression="var3" Label="var3" Title="var3" Unit="" Internal="var3" Type="F" Min="-4.52968788e+00" Max="4.66851807e+00"/>
+    <Variable VarIndex="3" Expression="var4" Label="var4" Title="var4" Unit="" Internal="var4" Type="F" Min="-4.66884232e+00" Max="5.14146757e+00"/>
+  </Variables>
+  <Spectators NSpec="1">
+    <Spectator SpecIndex="0" Expression="eta" Label="eta" Title="eta" Unit="" Internal="eta" Type="F" Min="-2.49952102e+00" Max="2.49999905e+00"/>
+  </Spectators>
+  <Classes NClass="2">
+    <Class Name="Signal" Index="0"/>
+    <Class Name="Background" Index="1"/>
+  </Classes>
+  <Transformations NTransformations="0"/>
+  <MVAPdfs/>
+  <Weights NCoeff="5">
+    <Coefficient Index="0" Value="-2.5258292735168143e-02"/>
+    <Coefficient Index="1" Value="-5.6138479511380575e-02"/>
+    <Coefficient Index="2" Value="-6.7125823107363628e-03"/>
+    <Coefficient Index="3" Value="9.6340292947937126e-02"/>
+    <Coefficient Index="4" Value="2.1343637144481650e-01"/>
+  </Weights>
+</MethodSetup>

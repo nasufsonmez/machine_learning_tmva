@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<MethodSetup Method="FDA::FDA_GA">
+  <GeneralInfo>
+    <Info name="TMVA Release" value="4.2.1 [262657]"/>
+    <Info name="ROOT Release" value="6.33/01 [401665]"/>
+    <Info name="Creator" value="nsonmez"/>
+    <Info name="Date" value="Tue Sep 17 20:30:47 2024"/>
+    <Info name="Host" value="Darwin MacAir-1879.local 23.6.0 Darwin Kernel Version 23.6.0: Mon Jul 29 21:16:46 PDT 2024; root:xnu-10063.141.2~1/RELEASE_ARM64_T8112 arm64"/>
+    <Info name="Dir" value="/Users/nsonmez/root_install/tutorials/tmva"/>
+    <Info name="Training events" value="2000"/>
+    <Info name="TrainingTime" value="2.41267920e-01"/>
+    <Info name="AnalysisType" value="Classification"/>
+  </GeneralInfo>
+  <Options>
+    <Option name="V" modified="Yes">False</Option>
+    <Option name="VerbosityLevel" modified="No">Default</Option>
+    <Option name="VarTransform" modified="No">None</Option>
+    <Option name="H" modified="Yes">True</Option>
+    <Option name="CreateMVAPdfs" modified="No">False</Option>
+    <Option name="IgnoreNegWeightsInTraining" modified="No">False</Option>
+    <Option name="Formula" modified="Yes">(0)+(1)*x0+(2)*x1+(3)*x2+(4)*x3</Option>
+    <Option name="ParRanges" modified="Yes">(-1,1);(-10,10);(-10,10);(-10,10);(-10,10)</Option>
+    <Option name="FitMethod" modified="Yes">GA</Option>
+    <Option name="Converger" modified="No">None</Option>
+  </Options>
+  <Variables NVar="4">
+    <Variable VarIndex="0" Expression="var1+var2" Label="myvar1" Title="myvar1" Unit="" Internal="myvar1" Type="F" Min="-9.31873512e+00" Max="7.53042316e+00"/>
+    <Variable VarIndex="1" Expression="var1-var2" Label="myvar2" Title="Expression 2" Unit="" Internal="myvar2" Type="F" Min="-3.70671988e+00" Max="4.02912045e+00"/>
+    <Variable VarIndex="2" Expression="var3" Label="var3" Title="Variable 3" Unit="units" Internal="var3" Type="F" Min="-5.05078554e+00" Max="4.33005810e+00"/>
+    <Variable VarIndex="3" Expression="var4" Label="var4" Title="Variable 4" Unit="units" Internal="var4" Type="F" Min="-5.82962179e+00" Max="5.03067923e+00"/>
+  </Variables>
+  <Spectators NSpec="2">
+    <Spectator SpecIndex="0" Expression="var1*2" Label="spec1" Title="Spectator 1" Unit="units" Internal="spec1" Type="F" Min="-9.14904976e+00" Max="9.52782059e+00"/>
+    <Spectator SpecIndex="1" Expression="var1*3" Label="spec2" Title="Spectator 2" Unit="units" Internal="spec2" Type="F" Min="-1.37235746e+01" Max="1.42917309e+01"/>
+  </Spectators>
+  <Classes NClass="2">
+    <Class Name="Signal" Index="0"/>
+    <Class Name="Background" Index="1"/>
+  </Classes>
+  <Transformations NTransformations="0"/>
+  <MVAPdfs/>
+  <Weights NPars="5" NDim="1" Formula="(0)+(1)*x0+(2)*x1+(3)*x2+(4)*x3">
+    <Parameter Index="0" Value="5.1617209646699880e-01"/>
+    <Parameter Index="1" Value="-1.4768181376021733e-01"/>
+    <Parameter Index="2" Value="-1.8069851305447715e-01"/>
+    <Parameter Index="3" Value="0.0000000000000000e+00"/>
+    <Parameter Index="4" Value="4.1370944978532148e-01"/>
+  </Weights>
+</MethodSetup>
