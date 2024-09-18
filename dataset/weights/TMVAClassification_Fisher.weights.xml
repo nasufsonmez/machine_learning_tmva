@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<MethodSetup Method="Fisher::Fisher">
+  <GeneralInfo>
+    <Info name="TMVA Release" value="4.2.1 [262657]"/>
+    <Info name="ROOT Release" value="6.32/04 [401412]"/>
+    <Info name="Creator" value="nsonmez"/>
+    <Info name="Date" value="Wed Sep 18 12:06:19 2024"/>
+    <Info name="Host" value="Darwin Sonoma-arm64.local 23.4.0 Darwin Kernel Version 23.4.0: Fri Mar 15 00:10:50 PDT 2024; root:xnu-10063.101.17~1/RELEASE_ARM64_VMAPPLE arm64"/>
+    <Info name="Dir" value="/Users/nsonmez/Desktop/tmva_classification"/>
+    <Info name="Training events" value="2000"/>
+    <Info name="TrainingTime" value="4.75215912e-03"/>
+    <Info name="AnalysisType" value="Classification"/>
+  </GeneralInfo>
+  <Options>
+    <Option name="V" modified="Yes">False</Option>
+    <Option name="VerbosityLevel" modified="No">Default</Option>
+    <Option name="VarTransform" modified="Yes">None</Option>
+    <Option name="H" modified="Yes">True</Option>
+    <Option name="CreateMVAPdfs" modified="Yes">True</Option>
+    <Option name="IgnoreNegWeightsInTraining" modified="No">False</Option>
+    <Option name="Method" modified="Yes">Fisher</Option>
+  </Options>
+  <Variables NVar="19">
+    <Variable VarIndex="0" Expression="lepton_pt" Label="lepton_pt" Title="lepton_pt" Unit="units" Internal="lepton_pt" Type="F" Min="2.00042801e+01" Max="3.58288849e+02"/>
+    <Variable VarIndex="1" Expression="lepton_eta" Label="lepton_eta" Title="lepton_eta" Unit="units" Internal="lepton_eta" Type="F" Min="-2.40773964e+00" Max="2.46027517e+00"/>
+    <Variable VarIndex="2" Expression="MET" Label="MET" Title="MET" Unit="units" Internal="MET" Type="F" Min="1.17903793e+00" Max="4.20774445e+02"/>
+    <Variable VarIndex="3" Expression="METEta" Label="METEta" Title="METEta" Unit="units" Internal="METEta" Type="F" Min="-7.19895649e+00" Max="6.63172865e+00"/>
+    <Variable VarIndex="4" Expression="Mjj" Label="Mjj" Title="Mjj" Unit="units" Internal="Mjj" Type="F" Min="0.00000000e+00" Max="2.32791479e+03"/>
+    <Variable VarIndex="5" Expression="Mjjj" Label="Mjjj" Title="Mjjj" Unit="units" Internal="Mjjj" Type="F" Min="0.00000000e+00" Max="2.44956396e+03"/>
+    <Variable VarIndex="6" Expression="Mt_lv" Label="Mt_lv" Title="Mt_lv" Unit="units" Internal="Mt_lv" Type="F" Min="1.00027971e+01" Max="3.52967377e+02"/>
+    <Variable VarIndex="7" Expression="Mi_lvb" Label="Mi_lvb" Title="Mi_lvb" Unit="units" Internal="Mi_lvb" Type="F" Min="1.00000000e+01" Max="2.91448853e+03"/>
+    <Variable VarIndex="8" Expression="N_jets" Label="N_jets" Title="N_jets" Unit="units" Internal="N_jets" Type="F" Min="1.00000000e+00" Max="4.00000000e+00"/>
+    <Variable VarIndex="9" Expression="N_Bjets" Label="N_Bjets" Title="N_Bjets" Unit="units" Internal="N_Bjets" Type="F" Min="1.00000000e+00" Max="4.00000000e+00"/>
+    <Variable VarIndex="10" Expression="R_lb" Label="R_lb" Title="R_lb" Unit="units" Internal="R_lb" Type="F" Min="5.65630078e-01" Max="6.30232000e+00"/>
+    <Variable VarIndex="11" Expression="Eta_lb" Label="Eta_lb" Title="Eta_lb" Unit="units" Internal="Eta_lb" Type="F" Min="1.25133991e-03" Max="4.37817335e+00"/>
+    <Variable VarIndex="12" Expression="alpha_t" Label="alpha_t" Title="alpha_t" Unit="units" Internal="alpha_t" Type="F" Min="0.00000000e+00" Max="1.76277626e+00"/>
+    <Variable VarIndex="13" Expression="jet1Pt" Label="jet1Pt" Title="jet1Pt" Unit="units" Internal="jet1Pt" Type="F" Min="3.00228844e+01" Max="6.52585022e+02"/>
+    <Variable VarIndex="14" Expression="jet1Phi" Label="jet1Phi" Title="jet1Phi" Unit="units" Internal="jet1Phi" Type="F" Min="-3.14052701e+00" Max="3.13799095e+00"/>
+    <Variable VarIndex="15" Expression="jet1Eta" Label="jet1Eta" Title="jet1Eta" Unit="units" Internal="jet1Eta" Type="F" Min="-4.75914955e+00" Max="4.80533791e+00"/>
+    <Variable VarIndex="16" Expression="jet2Pt" Label="jet2Pt" Title="jet2Pt" Unit="units" Internal="jet2Pt" Type="F" Min="0.00000000e+00" Max="2.87660858e+02"/>
+    <Variable VarIndex="17" Expression="jet2Phi" Label="jet2Phi" Title="jet2Phi" Unit="units" Internal="jet2Phi" Type="F" Min="-3.14026093e+00" Max="3.13651514e+00"/>
+    <Variable VarIndex="18" Expression="jet2Eta" Label="jet2Eta" Title="jet2Eta" Unit="units" Internal="jet2Eta" Type="F" Min="-4.70931959e+00" Max="4.86999607e+00"/>
+  </Variables>
+  <Spectators NSpec="0"/>
+  <Classes NClass="2">
+    <Class Name="Signal" Index="0"/>
+    <Class Name="Background" Index="1"/>
+  </Classes>
+  <Transformations NTransformations="0"/>
+  <MVAPdfs>
+    <PDF Name="Fisher_PDFSig" MinNSmooth="10" MaxNSmooth="10" InterpolMethod="2" KDE_type="1" KDE_iter="1" KDE_border="1" KDE_finefactor="1.0000000000000000e+00">
+      <Histogram Name="Fisher_tr_S_original" NBins="50" XMin="-1.0164760351181030e+00" XMax="2.0957543849945068e+00" HasEquidistantBins="1">
+        3.21634605e-02 4.82451907e-02 1.60817302e-02 0.00000000e+00 3.21634605e-02 3.21634605e-02 6.43269209e-02 6.43269209e-02 2.41225954e-01 3.69879795e-01 4.66370177e-01 6.43269209e-01 3.69879795e-01 4.66370177e-01 4.02043256e-01 4.66370177e-01 7.23677861e-01 1.02923074e+00 9.00576893e-01 1.25437496e+00 1.27045669e+00 1.43127399e+00 8.68413433e-01 1.01314900e+00 7.71923051e-01 8.52331703e-01 5.46778828e-01 3.21634605e-01 3.37716335e-01 3.05552874e-01 1.92980763e-01 1.92980763e-01 1.44735572e-01 8.04086512e-02 1.60817302e-02 3.21634605e-02 1.60817302e-02 0.00000000e+00 4.82451907e-02 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 
+      </Histogram>
+    </PDF>
+    <PDF Name="Fisher_PDFBkg" MinNSmooth="10" MaxNSmooth="10" InterpolMethod="2" KDE_type="1" KDE_iter="1" KDE_border="1" KDE_finefactor="1.0000000000000000e+00">
+      <Histogram Name="Fisher_tr_B_original" NBins="50" XMin="-1.0164760351181030e+00" XMax="2.0957543849945068e+00" HasEquidistantBins="1">
+        0.00000000e+00 1.60656485e-02 0.00000000e+00 0.00000000e+00 0.00000000e+00 4.81969455e-02 3.53444267e-01 8.99676316e-01 2.16886255e+00 2.77935719e+00 2.13673125e+00 7.55085480e-01 6.58691589e-01 5.30166401e-01 9.31807613e-01 8.67545019e-01 8.83610668e-01 8.99676316e-01 5.62297698e-01 4.65903807e-01 2.08853431e-01 1.92787782e-01 2.24919079e-01 1.12459540e-01 1.28525188e-01 9.63938910e-02 3.21312970e-02 3.21312970e-02 1.60656485e-02 0.00000000e+00 0.00000000e+00 0.00000000e+00 1.60656485e-02 1.60656485e-02 0.00000000e+00 0.00000000e+00 1.60656485e-02 0.00000000e+00 1.60656485e-02 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 0.00000000e+00 
+      </Histogram>
+    </PDF>
+  </MVAPdfs>
+  <Weights NCoeff="20">
+    <Coefficient Index="0" Value="-2.0950478267906034e-01"/>
+    <Coefficient Index="1" Value="-9.9969626402313542e-05"/>
+    <Coefficient Index="2" Value="-1.1895934755698568e-02"/>
+    <Coefficient Index="3" Value="2.7538106187993639e-03"/>
+    <Coefficient Index="4" Value="-1.3786664857520066e-02"/>
+    <Coefficient Index="5" Value="6.0574427483239173e-04"/>
+    <Coefficient Index="6" Value="-3.8149787105995145e-04"/>
+    <Coefficient Index="7" Value="-4.7524213802478451e-03"/>
+    <Coefficient Index="8" Value="-3.4354205591658908e-05"/>
+    <Coefficient Index="9" Value="2.9500602101434453e-01"/>
+    <Coefficient Index="10" Value="-1.9050899020877374e-01"/>
+    <Coefficient Index="11" Value="-4.0203456345103313e-03"/>
+    <Coefficient Index="12" Value="-4.5569302381167534e-02"/>
+    <Coefficient Index="13" Value="-9.4080215528976677e-02"/>
+    <Coefficient Index="14" Value="-6.5040549593143183e-04"/>
+    <Coefficient Index="15" Value="-9.3994553312009843e-03"/>
+    <Coefficient Index="16" Value="-1.8333369297031010e-02"/>
+    <Coefficient Index="17" Value="4.3491950733865470e-03"/>
+    <Coefficient Index="18" Value="-3.4963238714727576e-03"/>
+    <Coefficient Index="19" Value="-9.3439058220269947e-03"/>
+  </Weights>
+</MethodSetup>
